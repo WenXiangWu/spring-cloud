@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients(basePackages = "com.reign")
-public class ProductWebFeignApplication {
+public class ProductWebRestApplication {
 
     @Bean
     @LoadBalanced
@@ -25,7 +25,7 @@ public class ProductWebFeignApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ProductWebFeignApplication.class, args);
+        SpringApplication.run(ProductWebRestApplication.class, args);
     }
 
 }
